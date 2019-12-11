@@ -206,7 +206,7 @@ function generateHTML(data) {
                     <div class="photo-header">
                         <img src="${data.photo}">
                         <h1>${data.name}</h1>
-                        <h2>Employed at ${data.company}</h2>
+                        <h4>Employed at ${data.company}</h4>
                         <div class="links-nav">
                             <a class="nav-link" href="https://www.google.com/maps/place/${data.location}"
                                 target="_blank">${data.location}</a>

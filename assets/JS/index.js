@@ -36,6 +36,7 @@ function init() {
         let photo = response.data.avatar_url;
         let name = response.data.login;
         let location = response.data.location;
+        let company = response.data.company;
         let profile = response.data.html_url;
         let blog = response.data.blog;
         let bio = response.data.bio;
@@ -46,7 +47,7 @@ function init() {
         console.log(photo, name, location, profile, blog, bio, repos, followers, following);
 
 
-        const html = generateHTML({color, photo, name, location, profile, blog, bio, repos, followers, following });
+        const html = generateHTML({color, photo, name, location, company, profile, blog, bio, repos, followers, following });
 
         conversion({ html: html}, function (err, result) {
           if (err) {
@@ -55,7 +56,7 @@ function init() {
           console.log(result.numberOfPages);
           console.log(result.logs);
           result.stream.pipe(fs.createWriteStream('./index.pdf'));
-          conversion.kill(); // necessary if you use the electron-server strategy, see bellow for details
+          conversion.kill(); 
         });
 
 

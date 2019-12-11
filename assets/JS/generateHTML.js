@@ -210,7 +210,7 @@ function generateHTML(data) {
                         <div class="links-nav">
                             <a class="nav-link" href="https://www.google.com/maps/place/${data.location}"
                                 target="_blank">${data.location}</a>
-                            <a class="nav-link" href="https://github.com/${data.profile}" target="_blank">Github</a>
+                            <a class="nav-link" href="${data.profile}" target="_blank">Github</a>
                             <a class="nav-link" href="${data.blog}" target="_blank">Blog</a>
                         </div>
                     </div>

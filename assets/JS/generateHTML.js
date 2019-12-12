@@ -236,7 +236,7 @@ function generateHTML(data) {
                 <div class="col">
                     <div class="card">
                         <h3>Stars</h3>
-                        <h3></h3>
+                        <h3>14</h3>
                     </div>
                 </div>
                 <div class="col">
